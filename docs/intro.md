@@ -59,4 +59,4 @@ Para aprovechar al máximo esta documentación, se recomienda:
 2. Seguir las guías prácticas para entender la aplicación de las herramientas.  
 3. Consultar las mejores prácticas al diseñar o mejorar procesos existentes.  
 
-➡️ **[Comience con los conceptos básicos de Docker](./docker/overview.md)**  
+➡️ **[Comience con los conceptos básicos de Docker](/docs/category/tutorial-docker)**  
