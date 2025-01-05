@@ -1,0 +1,10 @@
+diego:
+  name: Diego Romero
+  title: CEO Heitic
+  image_url: https://media.licdn.com/dms/image/v2/D4E03AQEulNGvnGWCpA/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1729256969225?e=1741219200&v=beta&t=QMI4UHQyOqfzNJ7OIufe4CzMSdeTOGHbKlh1lJ7GCKw
+  page:
+    # customize the url of the author page at /blog/authors/<permalink>
+    permalink: '/all-sebastien-lorber-articles'
+  socials:
+    linkedin: https://www.linkedin.com/in/diego-alejandro-romero-mercado-3858b6208/
+    github: diegmero

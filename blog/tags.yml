@@ -1,0 +1,83 @@
+js:
+  label: JavaScript
+  permalink: /javascript
+  description: Descripción de JavaScript
+
+wordpress:
+  label: WordPress
+  permalink: /wordpress
+  description: Descripción de WordPress
+
+prometheus:
+  label: Prometheus
+  permalink: /prometheus
+  description: Descripción de Prometheus
+
+grafana:
+  label: Grafana
+  permalink: /grafana
+
+zabbix:
+  label: Zabbix
+  permalink: /zabbix
+  description: Descripción de Zabbix
+
+git:
+  label: Git
+  permalink: /git
+  description: Descripción de Git
+
+github:
+  label: GitHub
+  permalink: /github
+  description: Descripción de GitHub
+
+docker:
+  label: Docker
+  permalink: /docker
+  description: Descripción de Docker
+
+kubernetes:
+  label: Kubernetes
+  permalink: /kubernetes
+  description: Descripción de Kubernetes
+
+react:
+  label: React
+  permalink: /react
+  description: Descripción de React
+
+java:
+  label: Java
+  permalink: /java
+  description: Descripción de Java
+
+python:
+  label: Python
+  permalink: /python
+  description: Descripción de Python
+
+kotlin:
+  label: Kotlin
+  permalink: /kotlin
+  description: Descripción de Kotlin
+
+go:
+  label: Go
+  permalink: /go
+  description: Descripción de Go
+
+linux:
+  label: Linux
+  permalink: /linux
+  description: Descripción de Linux
+
+ci-cd:
+  label: CI/CD
+  permalink: /ci-cd
+  description: Descripción de CI/CD
+
+testing:
+  label: Testing
+  permalink: /testing
+

@@ -1,0 +1,104 @@
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+ 
+ @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400&family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap');
+ @import '@fortawesome/fontawesome-free/css/all.min.css';
+
+
+/* You can override the default Infima variables here. */
+:root {
+    /* Tipografía para el contenido */
+  --ifm-font-family-base: 'Inter', system-ui, -apple-system, sans-serif;
+  --ifm-heading-font-family: 'Inter Tight', serif;
+
+  --ifm-color-primary: #2e8555;
+  --ifm-color-primary-dark: #29784c;
+  --ifm-color-primary-darker: #277148;
+  --ifm-color-primary-darkest: #205d3b;
+  --ifm-color-primary-light: #33925d;
+  --ifm-color-primary-lighter: #359962;
+  --ifm-color-primary-lightest: #3cad6e;
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);  
+}
+
+/* For readability concerns, you should choose a lighter palette in dark mode. */
+[data-theme='dark'] {
+  --ifm-color-primary: #25c2a0;
+  --ifm-color-primary-dark: #21af90;
+  --ifm-color-primary-darker: #1fa588;
+  --ifm-color-primary-darkest: #1a8870;
+  --ifm-color-primary-light: #29d5b0;
+  --ifm-color-primary-lighter: #32d8b4;
+  --ifm-color-primary-lightest: #4fddbf;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+}
+
+
+/* Contenedor de iconos tecnológicos */
+.tech-icons-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: center;
+  justify-content: left;
+  margin: 2rem 0;
+}
+
+/* Tamaño base para los iconos */
+.tech-icons-container img {
+  width: 60px;
+  height: 48px;
+  object-fit: contain;
+}
+
+/* Ajustes para móviles */
+@media screen and (max-width: 480px) {
+  .tech-icons-container {
+    gap: 0.5rem;
+  }
+
+  .tech-icons-container img {
+    width: 40px;
+    height: 32px;
+  }
+}
+
+/* Ajustes para tablets */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .tech-icons-container img {
+    width: 45px;
+    height: 40px;
+  }
+}
+
+
+.navbar__icon {
+  height: 2rem;
+  width: 2rem;
+}
+
+.navbar__github {
+  -webkit-tap-highlight-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-size: 1.4rem;
+  transition: background var(--ifm-transition-fast);
+}
+
+html[data-theme='light'] .navbar__github {
+  color: #000;
+}
+
+html[data-theme='dark'] .navbar__github {
+  color: #fff;
+}
+
+.navbar__github:hover {
+  background: var(--ifm-color-emphasis-200);
+}
