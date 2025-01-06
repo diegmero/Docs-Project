@@ -91,7 +91,7 @@
 
   .navbar-sidebar__item {
     color: #ffffff;
-        width: 50px;
+    width: 100%;
   }
 
   .menu__link {
@@ -119,7 +119,8 @@
   }
 
   .navbar__inner .navbar__items .navbar__icon{
-    display: block;
+    display: flex;
+    align-items: center;
     width: 35px;
     font-size: 20px;
   }
