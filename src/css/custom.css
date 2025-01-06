@@ -163,9 +163,6 @@
    display: flex;
    justify-content: space-evenly;
    width: 100%;
-   border-bottom: 1px solid #1e293b;
-   padding-bottom: 2rem;
-   margin-bottom: 1rem;
  }
  
  .footer__col {
@@ -185,13 +182,8 @@
  }
  
  .footer__item {
-   margin-bottom: 0.5rem;
  }
  
- .footer__link-item {
-   color: #cbd5e1;
-   transition: color 0.2s;
- }
  
  .footer__link-item:hover {
    color: #38bdf8;
@@ -207,9 +199,11 @@
  .footer__copyright {
    color: #94a3b8;
    font-size: 0.9rem;
-   margin-top: 2rem;
+   margin: 0;
    text-align: center;
    width: 100%;
+   padding-top: 30px;
+   border-top: 2px solid #1e293b;
  }
  
  /* Media Queries */
@@ -288,7 +282,8 @@
    }
 
    .footer{
-    padding: 20px;
+    padding: 20px 15px;
+    margin: 0;
    }
  
    .footer__links {
