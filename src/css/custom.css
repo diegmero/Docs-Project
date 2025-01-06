@@ -114,7 +114,7 @@
     color:#006ec2;
   }
 
-  .navbar-sidebar .navbar-sidebar__items .menu__list-item .navbar__icon{
+  .navbar-sidebar__items .menu__list .menu__list-item:not(.menu__list-item--collapsed) .navbar__icon {
     display: none;
   }
   .tocCollapsibleButton_TO0P{
