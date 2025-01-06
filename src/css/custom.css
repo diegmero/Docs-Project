@@ -3,102 +3,223 @@
  * bundles Infima by default. Infima is a CSS framework designed to
  * work well for content-centric websites.
  */
- 
+
  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400&family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap');
  @import '@fortawesome/fontawesome-free/css/all.min.css';
+ 
+ /* You can override the default Infima variables here. */
+ :root {
+   /* Tipografía para el contenido */
+   --ifm-font-family-base: 'Inter', system-ui, -apple-system, sans-serif;
+   --ifm-heading-font-family: 'Inter Tight', serif;
+ 
+   --ifm-color-primary: #006ec2;
+   --ifm-color-primary-dark: #29784c;
+   --ifm-color-primary-darker: #277148;
+   --ifm-color-primary-darkest: #205d3b;
+   --ifm-color-primary-light: #33925d;
+   --ifm-color-primary-lighter: #359962;
+   --ifm-color-primary-lightest: #3cad6e;
+   --ifm-code-font-size: 95%;
+   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);  
+ 
+   --site-content-width: 1280px;
+ }
+ 
+ /* For readability concerns, you should choose a lighter palette in dark mode. */
+ [data-theme='dark'] {
+   --ifm-color-primary: #25c2a0;
+   --ifm-color-primary-dark: #21af90;
+   --ifm-color-primary-darker: #1fa588;
+   --ifm-color-primary-darkest: #1a8870;
+   --ifm-color-primary-light: #29d5b0;
+   --ifm-color-primary-lighter: #32d8b4;
+   --ifm-color-primary-lightest: #4fddbf;
+   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+ }
 
+ .hero{
+  background-color:#020617;
+  color:#ffffff;
+  margin-top: 1rem;
+  border: 3px solid #03A9F4;
+  border-radius: 1rem;
+ }
+ 
+ /* Layout */
+ .main-wrapper {
+   max-width: var(--site-content-width);
+   margin: 0 auto;
+   padding: 0 1rem;
+ }
+ 
+ /* Navbar */
+ .navbar {
+   width: 100%;
+ }
+ 
+ .navbar__inner {
+   max-width: var(--site-content-width);
+   margin: 0 auto;
+   padding: 0 1rem;
+ }
+ 
+ .navbar__icon {
+   height: 2rem;
+   width: 2rem;
+ }
+ 
+ .navbar__github {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   border-radius: 50%;
+   font-size: 1.4rem;
+ }
+ 
+ /* Light theme navbar */
+ html[data-theme='light'] .navbar {
+   background-color: #020617; 
+   color: #ffffff;
+ }
+ 
+ html[data-theme='light'] .navbar__brand,
+ html[data-theme='light'] .navbar__link {
+   color: #ffffff;
+ }
+ 
+ html[data-theme='light'] .navbar__brand:hover {
+   color: #38BCF8;
+ }
+ 
+ html[data-theme='light'] .navbar__link:hover {
+   color: #38BCF8;
+ }
 
-/* You can override the default Infima variables here. */
-:root {
-    /* Tipografía para el contenido */
-  --ifm-font-family-base: 'Inter', system-ui, -apple-system, sans-serif;
-  --ifm-heading-font-family: 'Inter Tight', serif;
+ .title_f1Hy a{
+   color: #020617;
+   text-decoration:none;
+ }
 
-  --ifm-color-primary: #2e8555;
-  --ifm-color-primary-dark: #29784c;
-  --ifm-color-primary-darker: #277148;
-  --ifm-color-primary-darkest: #205d3b;
-  --ifm-color-primary-light: #33925d;
-  --ifm-color-primary-lighter: #359962;
-  --ifm-color-primary-lightest: #3cad6e;
-  --ifm-code-font-size: 95%;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);  
+ .title_f1Hy a:hover{
+  color: #020617;
+  text-decoration:underline;
 }
 
-/* For readability concerns, you should choose a lighter palette in dark mode. */
-[data-theme='dark'] {
-  --ifm-color-primary: #25c2a0;
-  --ifm-color-primary-dark: #21af90;
-  --ifm-color-primary-darker: #1fa588;
-  --ifm-color-primary-darkest: #1a8870;
-  --ifm-color-primary-light: #29d5b0;
-  --ifm-color-primary-lighter: #32d8b4;
-  --ifm-color-primary-lightest: #4fddbf;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
-}
-
-
-/* Contenedor de iconos tecnológicos */
-.tech-icons-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-  align-items: center;
-  justify-content: left;
-  margin: 2rem 0;
-}
-
-/* Tamaño base para los iconos */
-.tech-icons-container img {
-  width: 60px;
-  height: 48px;
-  object-fit: contain;
-}
-
-/* Ajustes para móviles */
-@media screen and (max-width: 480px) {
-  .tech-icons-container {
-    gap: 0.5rem;
-  }
-
-  .tech-icons-container img {
-    width: 40px;
-    height: 32px;
-  }
-}
-
-/* Ajustes para tablets */
-@media screen and (min-width: 481px) and (max-width: 768px) {
-  .tech-icons-container img {
-    width: 45px;
-    height: 40px;
-  }
-}
-
-
-.navbar__icon {
-  height: 2rem;
-  width: 2rem;
-}
-
-.navbar__github {
-  -webkit-tap-highlight-color: transparent;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
-  font-size: 1.4rem;
-  transition: background var(--ifm-transition-fast);
-}
-
-html[data-theme='light'] .navbar__github {
-  color: #000;
-}
-
-html[data-theme='dark'] .navbar__github {
-  color: #fff;
-}
-
-.navbar__github:hover {
-  background: var(--ifm-color-emphasis-200);
-}
+ 
+ /* Tech Icons */
+ .tech-icons-container {
+   display: flex;
+   flex-wrap: wrap;
+   gap: 1rem;
+   align-items: center;
+   justify-content: left;
+   margin: 2rem 0;
+ }
+ 
+ .tech-icons-container img {
+   width: 60px;
+   height: 48px;
+   object-fit: contain;
+ }
+ 
+ /* Footer */
+ .footer {
+   background-color: #020617;
+   color: #f1f5f9;
+   padding: 2rem 0;
+   width: 100%;
+ }
+ 
+ .footer__inner {
+   max-width: var(--site-content-width);
+   margin: 0 auto;
+   padding: 0 1rem;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+ }
+ 
+ .footer__links {
+   display: flex;
+   justify-content:space-evenly;
+   width: 100%;
+   border-bottom: 1px solid #1e293b;
+   padding-bottom: 2rem;
+   margin-bottom: 1rem;
+ }
+ 
+ .footer__col {
+   flex: 0;
+   min-width: 200px;
+ }
+ 
+ .footer__title {
+   color: #38BCF8;
+   font-weight: bold;
+   margin-bottom: 1rem;
+ }
+ 
+ .footer__items {
+   list-style-type: none;
+   padding: 0;
+ }
+ 
+ .footer__item {
+   margin-bottom: 0.5rem;
+ }
+ 
+ .footer__link-item {
+   color: #cbd5e1;
+   transition: color 0.2s;
+ }
+ 
+ .footer__link-item:hover {
+   color: #38bdf8;
+   text-decoration: none;
+ }
+ 
+ .footer__link-item svg {
+   margin-right: 0.5rem;
+   width: 20px;
+   height: 20px;
+ }
+ 
+ .footer__copyright {
+   color: #94a3b8;
+   font-size: 0.9rem;
+   margin-top: 2rem;
+   text-align: center;
+   width: 100%;
+ }
+ 
+ /* Responsive adjustments */
+ @media screen and (max-width: 996px) {
+   .footer__links {
+     flex-direction: column;
+     align-items: flex-start;
+   }
+ 
+   .footer__col {
+     margin-bottom: 2rem;
+     max-width: 100%;
+   }
+ }
+ 
+ @media screen and (max-width: 768px) {
+   .tech-icons-container img {
+     width: 45px;
+     height: 40px;
+   }
+ }
+ 
+ @media screen and (max-width: 480px) {
+   .tech-icons-container {
+     gap: 0.5rem;
+   }
+ 
+   .tech-icons-container img {
+     width: 40px;
+     height: 32px;
+   }
+ }

@@ -5,7 +5,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 const config: Config = {
-  title: 'Bienvenidos a Heitic Docs',
+  title: 'Bienvenidos a Heitic',
   tagline: 'Información Actualizada',
   favicon: 'img/favicon.ico',
 
@@ -38,9 +38,6 @@ const config: Config = {
         docs: {
           sidebarPath: './sidebars.ts',
           // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
         blog: {
           showReadingTime: true,
@@ -108,55 +105,66 @@ const config: Config = {
       style: 'dark',
       links: [
         {
-          title: 'Docs',
+          title: 'Documentación',
           items: [
             {
-              label: 'Guiá de inicio',
+              label: 'Guía de inicio',
               to: '/docs/intro',
             },
-            { label: 'Blog',
-              to: '/blog',
-            }
-          ],
-        },
-        {
-          title: 'Comunidad',
-          items: [
             {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-            },
-            {
-              label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
-            },
-            {
-              label: 'X',
-              href: 'https://x.com/docusaurus',
+              label: 'Tutoriales',
+              to: '/docs/category/tutorial-docker',
             },
           ],
         },
         {
-          title: 'Más',
+          title: 'Recursos',
           items: [
             {
               label: 'Blog',
               to: '/blog',
             },
             {
+              label: 'Últimas actualizaciones',
+              to: '/blog/archive',
+            },
+          ],
+        },
+        {
+          title: 'Conecta',
+          items: [
+            {
+              label: 'LinkedIn',
+              to: 'https://www.linkedin.com/in/diego-alejandro-romero-mercado-3858b6208/',
+            },
+            {
               label: 'GitHub',
-              href: 'https://github.com/diegmero',
+              to: 'https://github.com/diegmero',
+            },
+          ],
+        },
+        {
+          title: 'Contribuir',
+          items: [
+            {
+              label: 'Código fuente',
+              to: 'https://github.com/diegmero/diego-docs',
+            },
+            {
+              label: 'Aportar contribuciones',
+              to: 'https://github.com/diegmero/diego-docs/blob/main/CONTRIBUTING.md',
             },
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} Heitic Docs Powered By Diego Romero Todos los derechos reservados`,
+      copyright: `© ${new Date().getFullYear()} Heitic Docs | Desarrollado por Diego Romero`,
     },
     prism: {
       theme: prismThemes.github,
       darkTheme: prismThemes.dracula,
       additionalLanguages: ['bash', 'javascript', 'typescript', 'css', 'less','scss', 'json', 'markdown', 'java', 'php', 'ruby', 'python', 'go', 'rust', 'jsx', 'docker']
     },
+    
   } satisfies Preset.ThemeConfig,
 };
 
